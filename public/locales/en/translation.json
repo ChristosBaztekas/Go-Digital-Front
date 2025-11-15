@@ -1,10 +1,94 @@
-{
+{"success": {
+  "title": "Your policy has been issued successfully!",
+  "message": "Your policy has been sent to your email and is ready to use.",
+  "back_to_home": "Back to Home",
+  "renew_contract": "Renew Policy",
+  "support": "Need help? Contact us at support@godigital.gr"
+},
     "nav": {
         "home": "Home",
         "products": "Products",
         "blog": "Blog",
         "contact": "Contact"
     },
+    "common.error.failed_load_data": "Failed to load data. Please try again.",
+"common.button.retry": "Retry",
+
+"validation": {
+
+    "select_nationality": "Επιλέξτε εθνικότητα",
+
+    "enter_insurance_date": "Εισαγάγετε ημερομηνία έναρξης ασφάλισης",
+    "insurance_date_future": "Η ημερομηνία δεν μπορεί να είναι στο παρελθόν",
+  "select_agent_type": "Please select an agent type",
+    "enter_date_of_birth": "Please enter your date of birth",
+    "birth_date_future": "Date of birth cannot be in the future",
+    "birth_date_too_old": "Date of birth seems too old",
+    "start_date_past": "Start date cannot be in the past",
+    "enter_firm_established": "Please enter firm established date",
+    "firm_date_future": "Firm established date cannot be in the future",
+    "select_type": "Please select a type",
+    "enter_gross_insured": "Please enter gross insured amount",
+    "gross_insured_invalid": "Gross insured must be a positive number",
+    "enter_gross_insured_current": "Please enter current gross insured",
+    "gross_insured_current_invalid": "Current gross insured must be positive",
+    "answer_question": "Please answer this question",
+    "provide_details": "Please provide additional details",
+    "select_departure": "Please select departure country",
+"select_gender": "Επιλέξτε φύλο",
+    "select_insured_type": "Please select insured type",
+    "person_count_range": "Number of persons must be between 1 and 20",
+    "enter_full_name": "Please enter full name",
+    "enter_identification": "Please enter identification",
+  "enter_vehicle": "Please enter a vehicle name",
+    "vehicle_too_short": "Vehicle name must be at least 2 characters",
+    "vehicle_exists": "This vehicle is already added",
+    "add_at_least_one": "Please add at least one vehicle",
+    "select_guarantee_type": "Please select the guarantee type",
+    "enter_other_description": "Please describe the \"Other\" guarantee type",
+    "start_date_future": "Start date must be today or in the future",
+    "end_before_start": "End date cannot be earlier than the start date",
+    "select_destination": "Please select at least one destination",
+    "enter_start_date": "Please enter start date",
+    "enter_end_date": "Please enter end date",
+    "end_date_future": "End date cannot be in the past",
+
+    "id_invalid_format": "ID must be 3-20 alphanumeric characters",
+    "select_holder_type": "Please select the holder type",
+    "enter_first_name": "Please enter first name",
+    "enter_last_name": "Please enter last name",
+    "name_too_short": "Name must be at least 2 characters",
+
+    "website_invalid": "Please enter a valid website (must start with http:// or https://)",
+
+    "enter_email": "Please enter email address",
+    "email_invalid": "Please enter a valid email address",
+
+    "enter_mobile": "Please enter mobile number",
+    "mobile_invalid": "Mobile number must be exactly 10 digits",
+
+    "enter_phone": "Please enter phone number",
+    "phone_invalid": "Phone number must be exactly 10 digits",
+
+    "enter_address": "Please enter address",
+    "enter_tin": "Please enter Tax Identification Number (TIN)",
+    "enter_tax_office": "Please enter Tax Office",
+
+    "enter_beneficiary_name": "Please enter beneficiary name",
+    "enter_guarantee_number": "Please enter guarantee / tender number",
+    "enter_guarantee_title": "Please enter guarantee title or purpose",
+    "enter_valid_value": "Please enter a valid value greater than zero",
+    "enter_valid_amount": "Please enter a guarantee amount greater than zero",
+
+    "answer_required": "This question is required – please select Yes or No",
+    "enter_details": "Please provide additional details for this answer"
+  },
+  "errors": {
+    "load_failed": "Failed to load data. Please try again.",
+    "invalid_data": "Invalid data provided",
+    "submit_failed": "Failed to submit. Please try again."
+  },
+ 
     "products": {
         "travel": "Travel Insurance",
         "guarantees": "Guarantees Insurance",
@@ -42,8 +126,8 @@
         "subtitle": "Discover articles and useful tips to improve your insurance and property protection, and more."
     },
     "hero_products_section": {
-      "get_quote_button": "Get Quote",
-      "total": "Total"
+        "get_quote_button": "Get Quote",
+        "total": "Total"
     },
     "contact_section": {
         "title": "Have questions?",
@@ -447,8 +531,8 @@
             "cta_text": "Natural or Legal person? Choose and get a quote!",
             "select_placeholder": "Type",
             "select_options": {
-              "person": "Person",
-              "legal": "Legal Entity"
+                "person": "Person",
+                "legal": "Legal Entity"
             }
         },
         "how_works_section": {
@@ -712,61 +796,76 @@
             "submit": "Submit"
         }
     },
-    "guarantee_quote_page": {
-        "steps": {
-            "step1": {
-                "title1": "Guarantee Type",
-                "title2": "Start Date",
-                "title3": "End Date",
-                "placeholder_departure": "Where are you travelling to?",
-                "placeholder_arrival": "Where are you travelling to?"
-            },
-            "step2": {
-                "title1": "Person Selection",
-                "title2": "Insured/Policy Holder",
-                "placeholder_nationality": "Nationality",
-                "placeholder_id": "ID / Passport Number"
-            },
-            "step3": {
-                "title": "Fill in the policy holder's details",
-                "placeholders": {
-                    "website": "Website",
-                    "email": "Email",
-                    "primary_phone": "Contact Phone",
-                    "secondary_phone": "Alternative Phone",
-                    "address": "Address",
-                    "tax_id": "Tax Identification Number (TIN)",
-                    "tax_office": "Tax Office"
-                }
-            },
-            "step4": {
-                "title": "Fill in the beneficiary's details",
-                "placeholders": {
-                    "name": "First Name",
-                    "email": "Email",
-                    "primary_phone": "Contact Phone",
-                    "secondary_phone": "Alternative Phone",
-                    "address": "Address",
-                    "tax_id": "Tax Identification Number (TIN)",
-                    "tax_office": "Tax Office"
-                }
-            },
-            "step5": {
-                "title": "Fill in the guarantee details",
-                "placeholders": {
-                    "tender_number": "Tender Number",
-                    "tender_title": "Title or Purpose of the Tender",
-                    "project_value": "Project / Tender Value",
-                    "guarantee_amount": "Guarantee Amount"
-                }
-            }
-        },
-        "buttons": {
-            "previous": "Previous",
-            "next": "Next",
-            "submit": "Submit"
+"guarantee_quote_page": {
+    "steps": {
+      "step1": {
+        "title1": "Guarantee Type",
+        "select_placeholder": "Select guarantee type",
+        "title2": "Start Date",
+        "start_date": "Start date",
+        "title3": "End Date",
+        "end_date": "End date",
+        "other_placeholder": "Describe the \"Other\" guarantee type..."
+      },
+      "step2": {
+        "title1": "Policy Holder Details",
+        "holder_type_placeholder": "Select holder type",
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "identification": "ID / Passport Number",
+        "contact_person": "Contact Person"
+      },
+      "step3": {
+        "title": "Policy Holder Contact & Tax Details",
+        "placeholders": {
+          "website": "Website (optional)",
+          "email": "Email",
+          "address": "Full Address",
+          "tax_id": "Tax Identification Number (TIN)",
+          "tax_office": "Tax Office"
         }
+      },
+      "step4": {
+        "title": "Beneficiary Details",
+        "placeholders": {
+          "name": "Company / Entity Name",
+          "email": "Email",
+          "address": "Full Address",
+          "tax_id": "Tax Identification Number (TIN)",
+          "contact_person": "Contact Person (optional)"
+        }
+      },
+      "step5": {
+        "title": "Guarantee Details",
+        "placeholders": {
+          "guarantee_number": "Guarantee / Tender Number",
+          "guarantee_title": "Guarantee Title or Purpose",
+          "guarantee_value": "Project / Tender Value (€)",
+          "guarantee_amount": "Required Guarantee Amount (€)"
+        }
+      }
     },
+    "buttons": {
+      "previous": "Previous",
+      "next": "Next",
+      "submit": "Submit Request"
+    }
+  },
+
+"common": {
+"person": "Person",
+    "date_of_birth": "Date of Birth",
+    "full_name": "Full Name",
+    "identification": "ID / Passport Number",
+    "no_quotes": "No quotes available at the moment",
+  "error": {
+    "failed_load_data": "Failed to load data. Please try again.",
+    "try_again": "An error occurred during submission. Please try again."
+  },
+  "button": {
+    "retry": "Retry"
+  }
+},
     "guarantee_proceed": {
         "header": "Guarantee",
         "select_quote": "Select Guarantee",
@@ -809,16 +908,18 @@
             "submit": "Submit"
         }
     },
-    "liability_quote_page": {
-        "form": {
-            "title": "License Plate Number (VRM)",
-            "placeholder_departure": "Where are you travelling from?"
-        },
-        "buttons": {
-            "previous": "Previous",
-            "next": "Next"
-        }
-    },
+   "liability_quote_page": {
+   "form": {
+     "title": "License Plate Number (VRM)",
+     "placeholder_departure": "Where are you travelling from?",
+     "vehicles_placeholder": "Enter vehicle name",
+     "add_button": "Add"
+   },
+   "buttons": {
+     "previous": "Previous",
+     "next": "Next"
+   }
+ },
     "travel_quote_page": {
         "steps": {
             "step1": {
@@ -1023,13 +1124,17 @@
             "description": "Covers claims raised against the insured concerning breach of duty due to negligence, erroneous actions or omissions, arising from the exercise and conduct of the professional activity."
         },
         "total": "Total",
-        "proceed_button": "Continue"
+        "proceed_button": "Continue",
+        "back_button": "Go Back"
     },
     "travel_proceed": {
+    
         "header": {
             "desktop": "Gold Single Trip Worldwide All Countries",
             "mobile": "Economy"
         },
+        "common.person": "Person"
+  ,
         "insurance_company": "Insurance Company",
         "insurance_period": "Insurance Period",
         "travelling_from": "Where are you travelling from?",
@@ -1069,6 +1174,9 @@
         "proceed_button": "Continue"
     },
     "guarantee_finish": {
+        "header": "Additional Questions",
+    
+    "details_placeholder": "Enter details here...",
         "header": "Answer the following questions",
         "questions": [
             "Have any claims been raised against you or your office in the last 5 years?",
