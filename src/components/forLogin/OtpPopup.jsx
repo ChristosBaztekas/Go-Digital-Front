@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export const OtpPopup = ({ handleLoginPopupClose, email }) => {
-    const { i18n } = useTranslation();
+    const {t, i18n } = useTranslation();
     const [otp, setOtp] = useState(['', '', '', '', '', '']);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState('');
@@ -168,9 +168,9 @@ export const OtpPopup = ({ handleLoginPopupClose, email }) => {
                 <ClosePopUpIcon />
             </span>
 
-            <h2 className="text-center justify-start text-black text-4xl font-semibold max-w-[430px] mx-auto">Λογαριασμός</h2>
-            <h3 className="text-2xl font-bold mt-28 px-2">Σου ήρθε ο μοναδικός κωδικός!</h3>
-            <p className="text-lg font-medium mt-2 px-2">Συμπλήρωσε τον εξαψήφιο κωδικό που σου ήρθε στο E-mail για να κάνεις Log In στον λογαριασμό σου.</p>
+            <h2 className="text-center justify-start text-black text-4xl font-semibold max-w-[430px] mx-auto">{t('auth.otpScreen.titleMain')}</h2>
+            <h3 className="text-2xl font-bold mt-28 px-2">{t('auth.otpScreen.titleOtp')}</h3>
+            <p className="text-lg font-medium mt-2 px-2">{t('auth.otpScreen.textInstructions')}</p>
 
             {error && (
                 <div className="mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
@@ -203,7 +203,7 @@ export const OtpPopup = ({ handleLoginPopupClose, email }) => {
                     disabled={isLoading}
                     className="text-lg hover:text-[#F15D2A] transition-all duration-300 underline disabled:opacity-50"
                 >
-                    Επαναποστολή Κωδικού
+                    {t('auth.otpScreen.actionResend')}
                 </button>
             </div>
 
@@ -212,7 +212,7 @@ export const OtpPopup = ({ handleLoginPopupClose, email }) => {
                     onClick={() => handleLoginPopupClose(false)}
                     className="w-full h-16 bg-[#333132] rounded-[10px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.15)] text-white text-lg font-bold mt-6 hover:bg-[#333132]/80 transition-all duration-300"
                 >
-                    Διόρθωση E-mail
+                    {t('auth.otpScreen.actionEditEmail')}
                 </button>
             </div>
         </div>

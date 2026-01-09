@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export const LoginPopup = ({ handleLoginPopupClose, onSwitchToRegister, onSwitchToOtp }) => {
-    const { i18n } = useTranslation();
+    const {t,  i18n } = useTranslation();
     const [email, setEmail] = useState('');
     const [error, setError] = useState('');
     const [isLoading, setIsLoading] = useState(false);
@@ -58,9 +58,9 @@ export const LoginPopup = ({ handleLoginPopupClose, onSwitchToRegister, onSwitch
                 <ClosePopUpIcon />
             </span>
 
-            <h2 className="text-center justify-start text-black text-4xl font-semibold max-w-[430px] mx-auto">Είσοδος στον λογαριασμό σου</h2>
-            <h3 className="text-2xl font-bold mt-10 px-2">Είσαι υφιστάμενος πελάτης ή έχεις λογαριασμό;</h3>
-            <p className="text-lg font-medium mt-2 px-2">Πρόσθεσε τη διεύθυνση ηλεκτρονικού ταχυδρομείου που είναι καταχωρημένος στον λογαριασμό σου και θα λάβεις έναν εξαψήφιο κωδικό για να συνδεθείς με ασφάλεια.</p>
+            <h2 className="text-center justify-start text-black text-4xl font-semibold max-w-[430px] mx-auto">{t('auth.login.header')}</h2>
+            <h3 className="text-2xl font-bold mt-10 px-2">{t('auth.login.subHeader')}</h3>
+            <p className="text-lg font-medium mt-2 px-2">{t('auth.login.description')}</p>
 
             {error && (
                 <div className="mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
@@ -82,18 +82,18 @@ export const LoginPopup = ({ handleLoginPopupClose, onSwitchToRegister, onSwitch
                     disabled={isLoading}
                     className="w-52 h-16 bg-[#F15D2A] rounded-[10px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.15)] text-white text-lg font-bold hover:bg-[#F15D2A]/80 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                    {isLoading ? 'Φόρτωση...' : 'Επόμενο'}
+                    {isLoading ? t('auth.loading') : t('auth.next')}
                 </button>
             </form>
 
             <div className="mt-6">
-                <h3 className="text-2xl font-bold">Δεν έχεις λογαριασμο;</h3>
-                <p className="text-lg font-medium mt-1">Μην ανησυχείς! Κάνε κλικ πιο κάτω και δημιούργησε τον λογαριασμό σου σε 1 λεπτό!</p>
+                <h3 className="text-2xl font-bold">{t('auth.register.noAccount')}</h3>
+                <p className="text-lg font-medium mt-1">{t('auth.register.description')}</p>
                 <button
                     onClick={onSwitchToRegister}
                     className="w-full h-16 bg-[#333132] rounded-[10px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.15)] text-white text-lg font-bold mt-6 hover:bg-[#333132]/80 transition-all duration-300"
                 >
-                    Δημιουργία Λογαριασμού
+                    {t('auth.register.createAccount')}
                 </button>
             </div>
         </div>
