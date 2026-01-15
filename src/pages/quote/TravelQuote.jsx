@@ -632,13 +632,13 @@ export const TravelQuote = () => {
         {currentStep < 4 && (
           <div className="flex justify-center items-center gap-3 vsm:gap-10 my-5">
             <ActionButton
-              text="Previous"
+              text={t("travel_quote_page.buttons.previous")}
               iconPosition="left"
               onClick={handlePrevious}
               isDisabled={currentStep === 0}
             />
             <ActionButton
-              text="Next"
+              text={t("travel_quote_page.buttons.next")}
               iconPosition="right"
               onClick={handleNext}
               isNext

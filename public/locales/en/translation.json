@@ -974,8 +974,10 @@
             "placeholders": {
                 "name": "First Name",
                 "surname": "Last Name",
+                "identification": "ID / Passport Number",
                 "country_code": "Select Country Code",
                 "phone": "Contact Phone",
+                "mobile": "Mobile Phone",
                 "email": "E-mail",
                 "city": "City",
                 "postal_code": "Postal Code",
