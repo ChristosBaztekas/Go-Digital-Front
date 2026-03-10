@@ -119,14 +119,14 @@
         "feature2": "Innovative Products",
         "feature3": "Comprehensive Coverage",
         "feature4": "Instant Policy Issuance",
-        "get_quote": "Get Quote"
+        "get_quote": "Get a Quote"
     },
     "hero_blog_section": {
         "title": "Our Blog",
         "subtitle": "Discover articles and useful tips to improve your insurance and property protection, and more."
     },
     "hero_products_section": {
-        "get_quote_button": "Get Quote",
+        "get_quote_button": "Get a Quote",
         "total": "Total"
     },
     "contact_section": {
@@ -237,7 +237,7 @@
                 "adipiscing elit, sed do eiusmod tempor",
                 "incididunt ut labore et dolore magna aliqua."
             ],
-            "get_quote_button": "Get Quote",
+            "get_quote_button": "Get a Quote",
             "more_info_button": "More Information"
         },
         "read_more": "Read More"
@@ -256,7 +256,7 @@
                 "adipiscing elit, sed do eiusmod tempor",
                 "incididunt ut labore et dolore magna aliqua."
             ],
-            "get_quote_button": "Get Quote",
+            "get_quote_button": "Get a Quote",
             "more_info_button": "More Information"
         },
         "read_more": "Read More"
@@ -275,7 +275,7 @@
                 "adipiscing elit, sed do eiusmod tempor",
                 "incididunt ut labore et dolore magna aliqua."
             ],
-            "get_quote_button": "Get Quote",
+            "get_quote_button": "Get a Quote",
             "more_info_button": "More Information"
         },
         "read_more": "Read More"
@@ -294,7 +294,7 @@
                 "adipiscing elit, sed do eiusmod tempor",
                 "incididunt ut labore et dolore magna aliqua."
             ],
-            "get_quote_button": "Get Quote",
+            "get_quote_button": "Get a Quote",
             "more_info_button": "More Information"
         },
         "read_more": "Read More"
@@ -313,7 +313,7 @@
                 "adipiscing elit, sed do eiusmod tempor",
                 "incididunt ut labore et dolore magna aliqua."
             ],
-            "get_quote_button": "Get Quote",
+            "get_quote_button": "Get a Quote",
             "more_info_button": "More Information"
         },
         "read_more": "Read More"
@@ -349,7 +349,7 @@
                 "adipiscing elit, sed do eiusmod tempor",
                 "incididunt ut labore et dolore magna aliqua."
             ],
-            "get_quote_button": "Get Quote",
+            "get_quote_button": "Get a Quote",
             "more_info_button": "More Info"
         }
     },
@@ -464,7 +464,7 @@
         "article_slider": {
             "subTitle": "Learn more about travel insurance and traveling"
         },
-        "get_quote_button": "Get Quote"
+        "get_quote_button": "Get a Quote"
     },
     "liability_page": {
         "hero_section": {
@@ -522,13 +522,13 @@
         "article_slider": {
             "subTitle": "Learn more about insurance and transportation."
         },
-        "get_quote_button": "Get Quote"
+        "get_quote_button": "Get a Quote"
     },
     "intermediaries_page": {
         "hero_section": {
-            "headTitle": "Professional Liability Insurance for Insurance Intermediaries!",
-            "subtitle": "Secure your career no matter what happens ... digitally and simply!",
-            "cta_text": "Natural or Legal person? Choose and get a quote!",
+            "headTitle": "Professional Liability Insurance for Intermediaries!",
+            "subtitle": "Protect your career from whatever may happen… simply online!",
+            "cta_text": "Natural or Legal Person? Choose one and get a quote!",
             "select_placeholder": "Type",
             "select_options": {
                 "person": "Person",
@@ -538,57 +538,61 @@
         "how_works_section": {
             "title": "How it Works",
             "steps": [
-                "Provide the necessary information",
+                "Fill in the necessary information",
                 "View your plan",
                 "Pay online",
-                "Receive your policy instantly"
+                "Get a policy immediately"
             ]
         },
         "coverages_section": {
             "title": "Our Coverages",
-            "description": "The coverages offered by GoDigital's Professional Liability Insurance for Insurance Intermediaries policy ensure maximum protection for you to practice your profession in the best way. Always make sure which coverages are included in your policy.",
+            "description": "The coverages offered in GoDigital's Professional Liability for Insurance Intermediaries policy ensure a full protection for each profession in the best possible way. Always check which coverages are included in your contract.",
             "slides": [
                 {
                     "title": "Professional Liability Coverage",
-                    "description": "Covers claims raised against the insured concerning breach of duty due to negligence, erroneous actions or omissions, arising from the exercise and conduct of the professional activity."
+                    "description": "Covers breach of duty due to negligence, wrongful acts or omissions arising from each professional activity exercise and conduct."
                 },
                 {
                     "title": "Defense Expenses",
-                    "description": "Covers the defense expenses of the insured in case of a claim due to negligence, erroneous actions or omissions."
+                    "description": "Covers defending costs of the insured in the case of a claim due to negligence, wrongful acts or omissions."
                 }
             ]
         },
         "services_section": {
             "title": "Services",
-            "description": "At GoDigital, we make sure to offer top-quality services that make your experience unique.",
+            "description": "At GoDigital we make sure to offer top-notch services that make your experience unique.",
             "services": [
                 {
                     "title": "Quick Quote",
-                    "description": "Get a travel insurance quote in less than 1 minute."
+                    "description": "Get a quote for your travel insurance in less than 1 minute"
                 },
                 {
-                    "title": "Human Support",
-                    "description": "Got questions? Leave us your details and we’ll get back to you immediately."
+                    "title": "Prompt Service",
+                    "description": "Do you have any questions? Fill in your details and we will contact you as soon as possible"
                 },
                 {
-                    "title": "Immediate Claims Settlement",
-                    "description": "We ensure that you are compensated fairly and promptly."
+                    "title": "Claims Support",
+                    "description": "During difficult times you will have someone by your side to help"
+                },
+                {
+                    "title": "Immediate Claims Processing",
+                    "description": "We make sure to compensate you fairly and quickly"
                 }
             ]
         },
         "why_section": {
             "title": "Why GoDigital?",
-            "subtitle": "At Go Digital, we simplify insurance digitally and bring you the best Professional Liability Insurance for Insurance Intermediaries proposal right to your screen.",
+            "subtitle": "At Go Digital we simplify digital insurance and bring on your screen the best solution for Professional Liability of Insurance Intermediaries.",
             "features": [
                 "Easy Purchase Process",
                 "All necessary coverages",
-                "Instant Policy Issuance"
+                "Immediate Policy Issuance"
             ]
         },
         "article_slider": {
-            "subTitle": "Learn more about insurance and intermediation."
+            "subTitle": "Learn more about insurance and Intermediaries"
         },
-        "get_quote_button": "Get Quote"
+        "get_quote_button": "Get a Quote"
     },
     "guarantees_page": {
         "hero_section": {
@@ -661,7 +665,7 @@
         "article_slider": {
             "subTitle": "Learn more about insurance and guarantee letters."
         },
-        "get_quote_button": "Get Quote"
+        "get_quote_button": "Get a Quote"
     },
     "foreigners_page": {
         "hero_section": {
@@ -731,7 +735,7 @@
         "article_slider": {
             "subTitle": "Learn more about insurance and health."
         },
-        "get_quote_button": "Get Quote"
+        "get_quote_button": "Get a Quote"
     },
     "profile_page": {
         "hero_section": {
