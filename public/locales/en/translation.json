@@ -379,8 +379,8 @@
     },
     "travel_page": {
         "hero_section": {
-            "headTitle": "Travel Insurance ... digitally simple!",
-            "subtitle": "Travel insurance finally simpler than ever!",
+            "headTitle": "Travel Insurance ... simply digital!",
+            "subtitle": "Travel insurance has finally become simpler than ever!",
             "destination_title": "Where are you travelling?",
             "destination_subtitle": "Tell us your destination and get a quote!",
             "select_placeholder": "Country",
@@ -393,76 +393,76 @@
         "how_works_section": {
             "title": "How it Works",
             "steps": [
-                "Tell us where and when you’re going",
+                "Tell us where and when",
                 "Choose the plan that suits you",
                 "Pay online",
-                "Receive your policy instantly"
+                "Get your policy instantly"
             ]
         },
         "coverages_section": {
             "title": "Our Coverages",
-            "description": "The coverages offered by GoDigital's Travel Insurance packages ensure maximum protection according to your needs. Always make sure which coverages are included in the package you have chosen.",
+            "description": "The plan coverage offered by GoDigital’s Travel Insurance ensures full protection tailored to your needs. Don’t forget to check the coverages included in the policy you have chosen.",
             "slides": [
                 {
                     "title": "Medical Care",
-                    "description": "So you don’t worry about sudden illnesses or accidents while abroad."
+                    "description": "You don't have to worry about a sudden illness or accident when you are traveling."
                 },
                 {
-                    "title": "Baggage Loss",
-                    "description": "Lost your luggage at the airport? We are here to compensate you so you can continue your trip hassle-free."
+                    "title": "Lost Luggage",
+                    "description": "Your suitcase was lost at the airport! We are here to compensate you, so that you can continue your trip without any trouble."
                 },
                 {
                     "title": "Trip Cancellation",
-                    "description": "Flight cancellations and unexpected events happen. With this coverage, you don’t need to worry about the financial impact."
+                    "description": "Flight cancellations and unforeseen events are part of the game. You will have peace of mind regarding the financial cost of such incidents."
                 },
                 {
-                    "title": "Flight Delays",
-                    "description": "Flight delays are common. In this case, we’ve got you covered."
+                    "title": "Flight Delay",
+                    "description": "Flight delays unfortunately are a common case. You are covered in this case as well."
                 },
                 {
                     "title": "Personal Accidents",
-                    "description": "Ensure your financial protection against personal accidents that may occur while travelling."
+                    "description": "Ensure financial protection for personal accidents that may occur during a trip."
                 },
                 {
                     "title": "Personal Liability",
-                    "description": "This coverage protects you from legal liabilities for injuries or property damage you may cause to others while travelling."
+                    "description": "This coverage will protect you from legal liability for injuries or damages caused to third parties when traveling."
                 }
             ]
         },
         "services_section": {
             "title": "Services",
-            "description": "At GoDigital, we make sure to offer top-quality services that make your experience unique.",
+            "description": "At GoDigital we strive to offer top-notch services that make your experience unique.",
             "services": [
                 {
                     "title": "Quick Quote",
-                    "description": "Get a travel insurance quote in less than 1 minute."
+                    "description": "In less than 1 minute, you will have travel insurance"
                 },
                 {
-                    "title": "Human Support",
-                    "description": "Got questions? Leave us your details and we’ll get back to you immediately."
+                    "title": "Prompt Service",
+                    "description": "Do you have any questions? Fill in your details and we will contact you immediately."
                 },
                 {
                     "title": "24/7 Assistance",
-                    "description": "An international call center at your disposal for immediate assistance while abroad."
+                    "description": "We are at your disposal via our international call centre for immediate help while you are abroad."
                 },
                 {
-                    "title": "Immediate Claims Settlement",
-                    "description": "We ensure that you are compensated fairly and promptly."
+                    "title": "Immediate Claims Processing",
+                    "description": "We make sure that you are compensated fairly and promptly."
                 }
             ]
         },
         "why_section": {
             "title": "Why GoDigital?",
-            "subtitle": "At Go Digital, we simplify insurance digitally and bring you the best travel insurance options right to your screen.",
+            "subtitle": "At Go Digital, we simplify the insurance process through digital means and bring the best travel insurance options on your screen.",
             "features": [
                 "Easy Purchase Process",
-                "Different Options",
+                "Plans Variety",
                 "Instant Policy Issuance",
-                "24/7 Support Worldwide"
+                "24/7 Customer Service Worldwide"
             ]
         },
         "article_slider": {
-            "subTitle": "Learn more about travel insurance and trips"
+            "subTitle": "Learn more about travel insurance and traveling"
         },
         "get_quote_button": "Get Quote"
     },
@@ -998,7 +998,12 @@
             },
             "note_placeholder": "Note",
             "submit_button": "Submit"
-        }
+        },
+      "errors": {
+        "missing_person_data": "Please fill in all required personal details fields.",
+        "no_persons": "Please add at least one person.",
+        "submit_failed": "An error occurred during submission. Please try again."
+      }
     },
     "liability_form": {
         "header": "Final Step!",
@@ -1018,7 +1023,12 @@
             "tax_office": "Tax Office",
             "country_code": "Select Country Code"
         },
-        "submit_button": "Submit"
+        "submit_button": "Submit",
+      "next_button": "Next",
+      "buttons": {
+        "yes": "Yes",
+        "no": "No"
+      }
     },
     "intermediaries_form": {
         "header": "Final Step!",
@@ -1071,6 +1081,10 @@
             "mobile_number": "Mobile Number",
             "additionalDetails": "Please provide additional details"
         },
+      "validation": {
+        "fill_all_fields": "Please fill in all required fields.",
+        "tin_9_digits": "Tax Identification Number must be 9 digits."
+      },
         "step3": {
             "subheader": "Policy Holder or Employer",
             "se_subheader": "Select here to enter the insured person's details."

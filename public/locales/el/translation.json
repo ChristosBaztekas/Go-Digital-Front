@@ -998,7 +998,12 @@
       "tax_office": "ΔΟΥ",
       "country_code": "Επιλέξτε Κωδικό Χώρας"
     },
-    "submit_button": "Υποβολή"
+    "submit_button": "Υποβολή",
+    "next_button": "Επόμενο",
+    "buttons": {
+      "yes": "Ναι",
+      "no": "Όχι"
+    }
   },
 
   "intermediaries_form": {
@@ -1052,6 +1057,10 @@
       "start_date": "Έναρξη Ασφάλισης",
       "mobile_number": "Κινητό Τηλέφωνο",
       "additionalDetails": "Παρακαλούμε δώστε περισσότερες λεπτομέρειες"
+    },
+    "validation": {
+      "fill_all_fields": "Παρακαλώ συμπληρώστε όλα τα πεδία.",
+      "tin_9_digits": "Ο ΑΦΜ πρέπει να αποτελείται από 9 ψηφία."
     },
     "step3": {
       "subheader": "Κάτοχος Ασφαλιστηρίου ή Εργοδότης",

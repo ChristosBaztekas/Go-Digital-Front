@@ -423,7 +423,7 @@ export const LiabilityForm = ({ isOpen, onClose, selectedQuote, userDetails }) =
                   isFormValid ? "bg-orange-500" : "bg-gray-300"
                 }`}
               >
-                {t("liability_form.next_button") || "Next"}
+                {t("liability_form.next_button")}
               </button>
             </form>
           </div>
