@@ -526,9 +526,9 @@
     },
     "intermediaries_page": {
         "hero_section": {
-            "headTitle": "Professional Liability Insurance for Intermediaries!",
-            "subtitle": "Protect your career from whatever may happen… simply online!",
-            "cta_text": "Natural or Legal Person? Choose one and get a quote!",
+            "headTitle": "Road Transport Professional Liability Insurance!",
+            "subtitle": "Insure your Professional activity for whatever happens… simply online! ",
+            "cta_text": "Write your vehicle registration number and get a quote!",
             "select_placeholder": "Type",
             "select_options": {
                 "person": "Person",
@@ -539,9 +539,9 @@
             "title": "How it Works",
             "steps": [
                 "Fill in the necessary information",
-                "View your plan",
+                "Check your plan",
                 "Pay online",
-                "Get a policy immediately"
+                "Get the contract immediately"
             ]
         },
         "coverages_section": {
@@ -582,15 +582,15 @@
         },
         "why_section": {
             "title": "Why GoDigital?",
-            "subtitle": "At Go Digital we simplify digital insurance and bring on your screen the best solution for Professional Liability of Insurance Intermediaries.",
+            "subtitle": "At Go Digital we simplify digital insurance and bring the best solution on your screen for Road Transport Professional Liability.",
             "features": [
                 "Easy Purchase Process",
-                "All necessary coverages",
+                "All necessary coverages included",
                 "Immediate Policy Issuance"
             ]
         },
         "article_slider": {
-            "subTitle": "Learn more about insurance and Intermediaries"
+            "subTitle": "Learn more about insurance and transportation."
         },
         "get_quote_button": "Get a Quote"
     },
@@ -669,67 +669,71 @@
     },
     "foreigners_page": {
         "hero_section": {
-            "headTitle": "Medical Insurance for Foreigners ... digitally simple!",
-            "subtitle": "Secure the most necessary coverages for your health!",
-            "cta_text": "Ready? Enter your ID and get a quote!",
+            "headTitle": "Medical Insurance for Foreigners… simply digital!",
+            "subtitle": "Ensure the necessary coverage for your health!",
+            "cta_text": "Are you ready? Fill in your ID details and get a quote!",
             "input_placeholder": "ID Card"
         },
         "how_works_section": {
             "title": "How it Works",
             "steps": [
-                "Provide your personal details",
+                "Fill in your personal data",
                 "View your plan",
                 "Pay online",
-                "Receive your policy instantly"
+                "Get the policy immediately"
             ]
         },
         "coverages_section": {
             "title": "Our Coverages",
-            "description": "The coverages offered by GoDigital's Medical Insurance for Foreigners policy ensure maximum protection for your health. Always make sure which coverages are included in your policy.",
+            "description": "GoDigital’s Medical Insurance plan for Foreigners ensures maximum protection for your health. Always check which coverages are included in your policy.",
             "slides": [
                 {
                     "title": "Death by Accident",
-                    "description": "Covers the death of the insured by accident with the heirs receiving the insured amount."
+                    "description": "The insured is covered in case of death by accident, so that the heirs can collect the insured amount."
                 },
                 {
                     "title": "Total, partial and permanent disability from accident",
-                    "description": "The insured receives the coverage amount in case of Permanent Total Disability or Permanent Partial Disability from Accident."
+                    "description": "The insured is covered in case of Permanent Total or Partial Disability by Accident."
                 },
                 {
-                    "title": "Inpatient Care due to accident or illness",
-                    "description": "Covers the care expenses of the insured in a public hospital, due to accident or illness."
+                    "title": "Hospital Care due to Accident or Illness",
+                    "description": "Covers the costs of the insured person's care in a public hospital, due to an accident or illness."
                 },
                 {
-                    "title": "Medical expenses due to accident or illness",
-                    "description": "Covers the medical expenses of the insured in a public hospital, due to accident or illness."
+                    "title": "Medical expenses due to Accident or Illness",
+                    "description": "Covers the medical expenses of the insured person in a public hospital, due to an accident or illness."
                 }
             ]
         },
         "services_section": {
             "title": "Services",
-            "description": "At GoDigital, we make sure to offer top-quality services that make your experience unique.",
+            "description": "At GoDigital, we strive to offer you top-notch services that make your experience unique.",
             "services": [
                 {
                     "title": "Quick Quote",
-                    "description": "Get a travel insurance quote in less than 1 minute."
+                    "description": "Get a quote for your insurance in less than 1 minute"
                 },
                 {
-                    "title": "Human Support",
-                    "description": "Got questions? Leave us your details and we’ll get back to you immediately."
+                    "title": "Prompt Service",
+                    "description": "Do you have any questions? Fill in your details and we will contact you shortly."
                 },
                 {
-                    "title": "Immediate Claims Settlement",
-                    "description": "We ensure that you are compensated fairly and promptly."
+                    "title": "Claims Support",
+                    "description": "During difficult times, you will have someone by your side to help"
+                },
+                {
+                    "title": "Immediate Claims Processing",
+                    "description": "We make sure you are compensated fairly and quickly"
                 }
             ]
         },
         "why_section": {
             "title": "Why GoDigital?",
-            "subtitle": "At Go Digital, we simplify insurance digitally and bring you the best Medical Insurance for Foreigners proposal right to your screen.",
+            "subtitle": "At Go Digital we simplify digital insurance, bringing to your screen the best solution for Foreigners Medical Insurance.",
             "features": [
                 "Easy Purchase Process",
                 "Comprehensive Coverage",
-                "Instant Policy Issuance"
+                "Immediate Policy Issuance"
             ]
         },
         "article_slider": {

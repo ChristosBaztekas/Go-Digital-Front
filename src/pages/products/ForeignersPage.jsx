@@ -108,7 +108,7 @@ export const ForeignersPage = () => {
                 </h2>
                 <div data-aos="fade-right" className="flex flex-wrap gap-2 vsm:gap-5 items-start justify-evenly mt-10 md:mt-[91px]">
                     {services.map((service, index) => {
-                        const icons = [Icon11, Icon22, Icon33];
+                        const icons = [Icon11, Icon22, Icon2, Icon33];
                         return (
                             <CircleGray key={index} circleColor="secondaryColor" textColor="primaryBgColor" icon={icons[index]}>
                                 {service.title}
