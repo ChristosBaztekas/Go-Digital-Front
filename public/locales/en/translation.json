@@ -196,12 +196,12 @@
         "warranties": [
             "Participation Guarantee",
             "Advance Payment Guarantee",
-            "Performance Guarantee",
-            "Payment Guarantee",
+            "Good Execution Guarantee",
+            "Good Payment Guarantee",
             "Good Operation and Maintenance Guarantee",
-            "Customs Guarantee",
-            "Immigration Department Guarantee",
-            "Energy Regulatory Authority (R.A.E.)"
+            "Customs",
+            "Immigration Department",
+            "Energy Regulatory Authority (RAE)"
         ]
     },
     "active_contract": {
@@ -596,9 +596,9 @@
     },
     "guarantees_page": {
         "hero_section": {
-            "headTitle": "Guarantees Insurance ... digitally simple!",
-            "subtitle": "Secure the guarantee letter you need without committing capital!",
-            "cta_text": "Choose the type of guarantee to start the quote process!",
+            "headTitle": "Guarantee Insurance gone… simply digital!",
+            "subtitle": "Get the necessary letter of guarantee without committing funds!",
+            "cta_text": "Choose the type of guarantee you’d prefer to get a quote!",
             "select_placeholder": "Guarantee Type",
             "select_options": {
                 "option1": "Option 1",
@@ -607,28 +607,28 @@
             }
         },
         "how_works_section": {
-            "title": "How it Works",
+            "title": "How does it work?",
             "steps": [
-                "Provide the necessary information",
-                "Fill in your details",
-                "Get the quote in your email in a few days"
+                "Fill in the necessary information",
+                "Fill in your personal details",
+                "Receive a quote to your email within a few days"
             ]
         },
         "coverages_section": {
-            "title": "Advantages of Guarantee Letters",
-            "description": "Guarantees Insurance offers multiple advantages to businesses and organizations participating in tenders and undertaking projects.",
+            "title": "Letters of Guarantee Advantages",
+            "description": "Guarantee Insurance offers many advantages to businesses and organizations that participate in tender processes and undertake projects.",
             "slides": [
                 {
-                    "title": "Avoid blocking significant funds"
+                    "title": "Avoiding commitment of significant funds"
                 },
                 {
-                    "title": "Increased working capital and liquidity"
+                    "title": "Higher working capital and liquidity"
                 },
                 {
                     "title": "Participation in more tenders"
                 },
                 {
-                    "title": "Claiming more tenders with potential for more project assignments"
+                    "title": "Claiming more tenders with an increased probability of project assignment"
                 },
                 {
                     "title": "Increased revenue and profitability"
@@ -637,33 +637,33 @@
         },
         "services_section": {
             "title": "Services",
-            "description": "At GoDigital, we make sure to offer top-quality services that make your experience unique.",
+            "description": "At GoDigital, we strive to offer top-notch services that make your experience unique.",
             "services": [
                 {
-                    "title": "Quick Quote",
-                    "description": "Get a travel insurance quote in less than 1 minute."
+                    "title": "Quick Process",
+                    "description": "Fill the necessary information digitally in few minutes."
                 },
                 {
-                    "title": "Human Support",
-                    "description": "Got questions? Leave us your details and we’ll get back to you immediately."
+                    "title": "Prompt Service",
+                    "description": "Do you have any questions? Fill in your details and we will contact you as soon as possible."
                 },
                 {
-                    "title": "Immediate Claims Settlement",
-                    "description": "We ensure that you are compensated fairly and promptly."
+                    "title": "Fast Claims Processing",
+                    "description": "We make sure that your compensation is fair and paid quickly."
                 }
             ]
         },
         "why_section": {
             "title": "Why GoDigital?",
-            "subtitle": "At Go Digital, we simplify insurance digitally and bring you the best proposal for issuing Guarantee Letters right to your screen.",
+            "subtitle": "At Go Digital we simplify the digital insurance process and bring to your screen the best solution for Letters of Guarantee issuance.",
             "features": [
-                "Easy Quote Process",
+                "Get a quote easily",
                 "No Capital Commitment",
-                "Quick Issuance of Guarantee Letter"
+                "Letter of Guarantee Quick Issuance"
             ]
         },
         "article_slider": {
-            "subTitle": "Learn more about insurance and guarantee letters."
+            "subTitle": "Learn more about insurance and letters of guarantee."
         },
         "get_quote_button": "Get a Quote"
     },
