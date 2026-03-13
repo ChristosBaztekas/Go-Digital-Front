@@ -91,35 +91,35 @@
  
     "products": {
         "travel": "Travel Insurance",
-        "guarantees": "Guarantees Insurance",
+        "guarantees": "Letters of Guarantee",
         "roadCarrier": "Road Carrier Liability",
-        "medicalForeigners": "Personal Accidents for Foreigners",
+        "medicalForeigners": "Personal Accidents of Foreigners",
         "liabilityIntermediaries": "Insurance Intermediaries Liability"
     },
     "hero_section": {
-        "title": "Insurance just became digital... simple!",
-        "subtitle": "Welcome to GoDigital! The insurance platform that makes the process easier and simpler than ever! At GoDigital, insurance adapts to your needs, in a modern way that fits your demanding lifestyle!",
+        "title": "Insurance just got simply… digital!",
+        "subtitle": "Welcome to GoDigital! An insurance platform that makes the purchasing process easier than ever! At GoDigital, insurance is tailored to your needs in a modern way, fully compatible with your daily life!",
         "travel_insurance": "Travel Insurance",
-        "medical_insurance_foreigners": "Personal Accidents for Foreigners",
+        "medical_insurance_foreigners": "Personal Accidents of Foreigners",
         "professional_liability_insurance_intermediaries": "Insurance Intermediaries Liability",
         "road_carrier_professional_liability": "Road Carrier Liability",
-        "guarantees": "Guarantee Letters"
+        "guarantees": "Letters of Guarantee"
     },
     "how_works_section": {
-        "title": "How it works",
-        "step1": "Provide the necessary information",
+        "title": "How does it work?",
+        "step1": "Fill in the necessary information",
         "step2": "View available packages",
         "step3": "Pay online",
-        "step4": "Receive the contract instantly"
+        "step4": "Get the plan in a minute"
     },
     "why_digital_section": {
         "title": "Why GoDigital?",
-        "subtitle": "At GoDigital, we simplify insurance digitally and bring innovative products to your screen that meet specialized needs!",
-        "feature1": "Easy Quote & Purchase Process",
+        "subtitle": "At Go Digital we simplify the insurance process by using digital means, bringing innovative products on your screen that meet your specific needs!",
+        "feature1": "Easy Offer & Purchase Process",
         "feature2": "Innovative Products",
         "feature3": "Comprehensive Coverage",
-        "feature4": "Instant Policy Issuance",
-        "get_quote": "Get a Quote"
+        "feature4": "Instant Contract Issuance",
+        "get_quote": "Get an Offer"
     },
     "hero_blog_section": {
         "title": "Our Blog",
@@ -152,8 +152,8 @@
     },
     "article_slider": {
         "title": "Articles",
-        "subTitle": "Useful articles about insurance that help you make the right decisions!",
-        "more_button": "More"
+        "subTitle": "Useful articles that will help you choose the right insurance plan!",
+        "more_button": "SHOW MORE"
     },
     "get_quote_popup": {
         "title": "Get a Quote",
@@ -356,23 +356,23 @@
     "home_page": {
         "services_section": {
             "title": "Services",
-            "description": "At GoDigital, we make sure to offer top-quality services that make your experience unique.",
+            "description": "At GoDigital we make sure to offer you top-notch services that make your experience unique.",
             "slides": [
                 {
                     "title": "Quick Quote",
-                    "description": "Get a travel insurance quote in less than 1 minute."
+                    "description": "Get a quote for your preferred insurance plan in less than a minute"
                 },
                 {
-                    "title": "Human Support",
-                    "description": "Got questions? Leave us your details and we’ll get back to you immediately."
+                    "title": "Prompt Service",
+                    "description": "Do you have any questions? Fill in your details and we will contact you as soon as possible"
                 },
                 {
-                    "title": "Claims Assistance",
-                    "description": "In difficult times, you have someone by your side to support you."
+                    "title": "Assistance",
+                    "description": "During your difficult times, a representative will be by your side to help"
                 },
                 {
-                    "title": "Immediate Claims Settlement",
-                    "description": "We ensure that you are compensated fairly and promptly."
+                    "title": "Immediate Claims Processing",
+                    "description": "We make sure that your compensation payment will be fast and direct"
                 }
             ]
         }
