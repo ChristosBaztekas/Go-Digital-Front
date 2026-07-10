@@ -37,7 +37,7 @@ export const LoginPopup = ({ handleLoginPopupClose, onSwitchToRegister, onSwitch
                 if (response.status === 404) {
                     setError('Το email δεν βρέθηκε. Παρακαλώ ελέγξτε το email σας ή δημιουργήστε νέο λογαριασμό.');
                 } else {
-                    setError(data.message || 'Συνέβη κάποιο σφάλμα. Παρακαλώ δοκιμάστε ξανά.');
+                    setError(data.error || 'Συνέβη κάποιο σφάλμα. Παρακαλώ δοκιμάστε ξανά.');
                 }
                 return;
             }

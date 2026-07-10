@@ -786,7 +786,7 @@
             "step3": {
                 "title1": "When is your date of birth?",
                 "title2": "Please select your gender:",
-                "placeholder_gender": "Φύλο",
+                "placeholder_gender": "Gender",
                 "options": [
                     "Economy",
                     "Business",
@@ -851,6 +851,11 @@
           "guarantee_value": "Project / Tender Value (€)",
           "guarantee_amount": "Required Guarantee Amount (€)"
         }
+      },
+      "results": {
+        "duration": "Description:",
+        "description": "Duration:",
+        "months": "month(s)"
       }
     },
     "buttons": {
@@ -874,6 +879,7 @@
     "next": "Next",
     "no" :"NO",
     "yes": "YES",
+    "no_data_proceed": "No data available to proceed. Please check your selections and try again",
     "error": {
       "failed_load_data": "Failed to load data. Please try again.",
       "try_again": "An error occurred during submission. Please try again."

@@ -29,22 +29,23 @@ export const ForeignersQuote = () => {
     };
 
     try {
-      const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
-      if (!saved) return defaultData;
-      const parsed = JSON.parse(saved);
-      return {
-        step1: { firstName: parsed.step1?.firstName ?? "", lastName: parsed.step1?.lastName ?? "" },
-        step2: {
-          nationality: parsed.step2?.nationality ?? "",
-          nationalityId: parsed.step2?.nationalityId ? Number(parsed.step2.nationalityId) : null,
-          identification: parsed.step2?.identification ?? "",
-        },
-        step3: {
-          birthday: parsed.step3?.birthday ?? "",
-          gender: parsed.step3?.gender ?? "",
-        },
-        step4: { insurancePeriod: parsed.step4?.insurancePeriod ?? "" },
-      };
+      return defaultData;
+      // const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
+      // if (!saved) return defaultData;
+      // const parsed = JSON.parse(saved);
+      // return {
+      //   step1: { firstName: parsed.step1?.firstName ?? "", lastName: parsed.step1?.lastName ?? "" },
+      //   step2: {
+      //     nationality: parsed.step2?.nationality ?? "",
+      //     nationalityId: parsed.step2?.nationalityId ? Number(parsed.step2.nationalityId) : null,
+      //     identification: parsed.step2?.identification ?? "",
+      //   },
+      //   step3: {
+      //     birthday: parsed.step3?.birthday ?? "",
+      //     gender: parsed.step3?.gender ?? "",
+      //   },
+      //   step4: { insurancePeriod: parsed.step4?.insurancePeriod ?? "" },
+      // };
     } catch {
       return defaultData;
     }

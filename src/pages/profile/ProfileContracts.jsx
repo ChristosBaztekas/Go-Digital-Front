@@ -250,9 +250,9 @@ export const ProfileContracts = () => {
               className="w-[100px] md:w-[199px]"
             />
             {/* User Name */}
-            <h1 className="max-w-[806px] mx-5 tiny:text-2xl vsm:text-4xl md:text-5xl font-semibold vsm:leading-[51.96px] md:leading-[81.96px]">
-              Mohamed Mohamed
-            </h1>
+            {/* <h1 className="max-w-[806px] mx-5 tiny:text-2xl vsm:text-4xl md:text-5xl font-semibold vsm:leading-[51.96px] md:leading-[81.96px]">
+              
+            </h1> */}
 
             {/* Inputs Fields */}
             <span className="hidden xl:flex flex-col gap-5 my-5">

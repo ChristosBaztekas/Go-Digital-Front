@@ -51,7 +51,7 @@ export const TravelProceed = () => {
         setUserDetails(formData);
       } catch (err) {
         console.error("Failed to load quote data:", err);
-        setError(t("travel_proceed.errors.load_failed"));
+        setError(t("common.no_data_proceed"));
       } finally {
         setIsLoading(false);
       }
@@ -141,7 +141,7 @@ export const TravelProceed = () => {
         <QuoteHeader />
         <div className="flex justify-center items-center min-h-screen">
           <div className="text-lg font-semibold text-red-600 text-center p-5">
-            {error || t("travel_proceed.errors.no_data")}
+            {error || t("common.no_data_proceed")}
           </div>
           </div>
        
@@ -307,7 +307,6 @@ export const TravelProceed = () => {
               className="text-secondaryColor hover:text-black transition-colors"
               aria-label={t("travel_proceed.download_policy")}
             >
-              <iconsUtil.DownloadIcon />
             </button>
           </div>
 

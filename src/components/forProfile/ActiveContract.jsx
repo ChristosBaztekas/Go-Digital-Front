@@ -317,7 +317,12 @@ export const ActiveContract = () => {
               <h1 className="max-w-[683px] text-xl sm:text-2xl lg:text-3xl text-center font-medium">
                 {t("active_contract.coverages")}
               </h1>
-              <iconsUtil.DownloadIcon />
+              <span 
+                className="cursor-pointer" 
+                onClick={() => window.open(getField('policy_link'), '_blank')}
+              >
+                <iconsUtil.DownloadIcon />
+              </span>
             </div>
 
             <hr className="border border-[#FACABC] mx-5" />
@@ -431,7 +436,7 @@ export const ActiveContract = () => {
                   : "€175.00"}
               </h1>
 
-              {contractData?.is_renewable === false && (
+              {contractData?.is_renewable === true && (
                 <button
                   className="text-center sm:text-xl font-bold bg-green-600 hover:bg-green-700 text-white rounded-[30px] py-3 w-full transition-all mb-3"
                   style={{ boxShadow: "0px -2px 4px 0px #FFEFEA" }}

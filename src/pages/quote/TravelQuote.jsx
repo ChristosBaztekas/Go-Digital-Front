@@ -35,12 +35,13 @@ export const TravelQuote = () => {
   const [errors, setErrors] = useState({});
 
   const [userData, setUserData] = useState(() => {
-    try {
-      const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
-      return saved ? JSON.parse(saved) : getDefaultUserData();
-    } catch {
-      return getDefaultUserData();
-    }
+    // try {
+    //   const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
+    //   return saved ? JSON.parse(saved) : getDefaultUserData();
+    // } catch {
+    //   return getDefaultUserData();
+    // }
+    return getDefaultUserData();
   });
 
   function getDefaultUserData() {
@@ -53,13 +54,13 @@ export const TravelQuote = () => {
     };
   }
 
-  useEffect(() => {
-    try {
-      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(userData));
-    } catch (err) {
-      console.error("Failed to save data:", err);
-    }
-  }, [userData]);
+  // useEffect(() => {
+  //   try {
+  //     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(userData));
+  //   } catch (err) {
+  //     console.error("Failed to save data:", err);
+  //   }
+  // }, [userData]);
 
   useEffect(() => {
     const fetchInitialData = async () => {

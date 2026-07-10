@@ -53,7 +53,21 @@ export const GuaranteeProceed = () => {
                 });
 
                 if (!response.ok) {
-                    throw new Error('Failed to fetch quotes');
+                    let errorMessage = 'Failed to fetch quotes';
+
+                    try {
+                        // Διαβάζει το JSON response (π.χ. { error: "Invalid holder TIN" })
+                        const errorData = await response.json();
+                        
+                        // Αποθηκεύει το string "Invalid holder TIN" μεταβλητή
+                        if (errorData && errorData.error) {
+                            errorMessage = errorData.error;
+                        }
+                    } catch (parseError) {
+                        console.log('Error parsing JSON:', parseError);
+                    }
+
+                    throw new Error(errorMessage);
                 }
 
                 const responseData = await response.json();
@@ -65,7 +79,7 @@ export const GuaranteeProceed = () => {
                 }
             } catch (error) {
                 console.error('Error fetching quotes:', error);
-                setError('Failed to fetch quotes. Please try again.');
+                setError(error.message ?? 'Failed to fetch quotes. Please try again.');
             } finally {
                 setIsLoading(false);
             }
@@ -288,7 +302,6 @@ export const GuaranteeProceed = () => {
                         <h1 className="max-w-[683px] text-xl sm:text-2xl lg:text-3xl text-left font-medium">
                             {selectedQuote?.name || t("guarantee_proceed.header")}
                         </h1>
-                        <iconsUtil.DownloadIcon />
                     </div>
 
                     <hr className="border border-[#FACABC] mx-5" />
@@ -299,7 +312,7 @@ export const GuaranteeProceed = () => {
                             <div className="flex flex-col gap-4 w-full">
                                 <div className="flex justify-between items-center">
                                     <h2 className="text-lg font-semibold text-secondaryColor">
-                                        Description:
+                                        {t("guarantee_quote_page.steps.results.description")}
                                     </h2>
                                     <p className="text-base text-gray-700">
                                         {selectedQuote?.description}
@@ -307,10 +320,10 @@ export const GuaranteeProceed = () => {
                                 </div>
                                 <div className="flex justify-between items-center">
                                     <h2 className="text-lg font-semibold text-secondaryColor">
-                                        Duration:
+                                        {t("guarantee_quote_page.steps.results.duration")}
                                     </h2>
                                     <p className="text-base text-gray-700">
-                                        {selectedQuote?.duration} month(s)
+                                        {selectedQuote?.duration} {t("guarantee_quote_page.steps.results.months")}
                                     </p>
                                 </div>
                             </div>

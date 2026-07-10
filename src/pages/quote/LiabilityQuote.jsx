@@ -11,20 +11,11 @@ export const LiabilityQuote = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
-  const [userData, setUserData] = useState(() => {
-    const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
-    return {
-      vehicles: saved ? JSON.parse(saved) : [],
-    };
-  });
+  const [userData, setUserData] = useState({ vehicles: [] });
 
   const [vehicleInput, setVehicleInput] = useState("");
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(() => {
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(userData.vehicles));
-  }, [userData.vehicles]);
 
   useEffect(() => {
     const renewDataStr = localStorage.getItem("renewContractData");
@@ -39,6 +30,23 @@ export const LiabilityQuote = () => {
       } catch (err) {
         console.error("Failed to load renewal data:", err);
       }
+    }
+  }, []);
+
+  useEffect(() => {
+    const prefilled = localStorage.getItem("liabilityVehicles");
+    if (prefilled) {
+      try {
+        const vehicles = JSON.parse(prefilled);
+        if (Array.isArray(vehicles) && vehicles.length > 0) {
+          setUserData((prev) =>
+            prev.vehicles.length > 0 ? prev : { ...prev, vehicles: vehicles.filter(Boolean) }
+          );
+        }
+      } catch (err) {
+        console.error("Failed to load prefilled vehicle data:", err);
+      }
+      localStorage.removeItem("liabilityVehicles");
     }
   }, []);
 
@@ -94,12 +102,13 @@ export const LiabilityQuote = () => {
       setError("Please add at least one vehicle");
       return;
     }
+    localStorage.setItem("liabilityVehicles", JSON.stringify(userData.vehicles));
     localStorage.setItem("liabilityQuoteData", JSON.stringify({ vehicles: userData.vehicles }));
     navigate("/get-a-quote-liability/proceed");
   };
 
   const handleBack = () => {
-    localStorage.removeItem(LOCAL_STORAGE_KEY);
+    localStorage.removeItem("liabilityVehicles");
     localStorage.removeItem("liabilityQuoteData");
     window.history.back();
   };

@@ -175,22 +175,7 @@ export const Economy = ({
             </div>
           )}
 
-          {/* Show More / Show Less (optional toggle) */}
-          {hasMore && (
-            <div className="flex justify-center mb-3">
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  // you can keep this if you want a separate toggle,
-                  // otherwise just rely on the card click
-                }}
-                className="text-sm font-medium text-secondaryColor hover:text-black underline"
-              >
-                {t("common.show_more")}
-              </button>
-            </div>
-          )}
-
+`
           {/* Previous & Next buttons */}
           <div className="flex justify-center gap-3 px-5 pb-5">
             <button

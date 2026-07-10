@@ -24,15 +24,16 @@ export const IntermediariesQuote = () => {
   const [errors, setErrors] = useState({});
 
   const [userData, setUserData] = useState(() => {
-    const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
-    return saved
-      ? JSON.parse(saved)
-      : {
-          step1: { agentType: "", agentTypeId: "", dateBirthday: "", startDate: "" },
-          step2: { firmEstablished: "", type: "", typeId: "" },
-          step3: { grossInsured: "", grossInsuredCurrent: "" },
-          step4: { questions: [] },
-        };
+    // const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
+    // return saved
+    //   ? JSON.parse(saved)
+    //   :
+    return {
+      step1: { agentType: "", agentTypeId: "", dateBirthday: "", startDate: "" },
+      step2: { firmEstablished: "", type: "", typeId: "" },
+      step3: { grossInsured: "", grossInsuredCurrent: "" },
+      step4: { questions: [] },
+    };
   });
 
   useEffect(() => {
@@ -82,7 +83,7 @@ export const IntermediariesQuote = () => {
             typeId: selectedType.id.toString(),
           },
         }));
-        setCurrentStep(1);
+        setCurrentStep(0);
         localStorage.removeItem("intermediaries_type_prefill");
       }
     }

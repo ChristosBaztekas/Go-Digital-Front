@@ -323,7 +323,7 @@ export const ForeignersProceed = () => {
                         <h1 className="max-w-[683px] text-xl sm:text-2xl lg:text-3xl text-center font-medium">
                             {t("foreigners_proceed.cover")}
                         </h1>
-                        <iconsUtil.DownloadIcon />
+                        {/* <iconsUtil.DownloadIcon /> */}
                     </div>
 
                     <hr className="border border-[#FACABC] mx-5" />

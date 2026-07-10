@@ -25,9 +25,10 @@ export const GuaranteeQuote = () => {
 
   const [userData, setUserData] = useState(() => {
     const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
-    return saved
-      ? JSON.parse(saved)
-      : {
+    // return saved
+    //     ? JSON.parse(saved)
+    //     : {
+    return {
           step1: {
             type_of_guarantee: "",
             type_other_desc: "",
@@ -806,28 +807,28 @@ export const GuaranteeQuote = () => {
               </h1>
               <TravelInput
                 type="text"
-                placeholder="Guarantee Number"
+                placeholder={t("guarantee_quote_page.steps.step5.placeholders.guarantee_number")}
                 value={userData.step5.guarantee_number}
                 onChange={(e) => handleInputChange("step5", "guarantee_number", e.target.value)}
                 error={errors.guarantee_number}
               />
               <TravelInput
                 type="text"
-                placeholder="Guarantee Title"
+                placeholder={t("guarantee_quote_page.steps.step5.placeholders.guarantee_title")}
                 value={userData.step5.guarantee_title}
                 onChange={(e) => handleInputChange("step5", "guarantee_title", e.target.value)}
                 error={errors.guarantee_title}
               />
               <TravelInput
                 type="number"
-                placeholder="Guarantee Value"
+                placeholder={t("guarantee_quote_page.steps.step5.placeholders.guarantee_value")}
                 value={userData.step5.guarantee_value}
                 onChange={(e) => handleInputChange("step5", "guarantee_value", e.target.value)}
                 error={errors.guarantee_value}
               />
               <TravelInput
                 type="number"
-                placeholder="Guarantee Amount"
+                placeholder={t("guarantee_quote_page.steps.step5.placeholders.guarantee_amount")}
                 value={userData.step5.guarantee_amount}
                 onChange={(e) => handleInputChange("step5", "guarantee_amount", e.target.value)}
                 error={errors.guarantee_amount}

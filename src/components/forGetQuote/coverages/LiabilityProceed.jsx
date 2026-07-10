@@ -217,7 +217,6 @@ export const LiabilityProceed = () => {
                         <h1 className="max-w-[683px] text-xl sm:text-2xl lg:text-3xl text-left font-medium">
                             {selectedQuote?.name || t("liability_proceed.header")}
                         </h1>
-                        <iconsUtil.DownloadIcon />
                     </div>
 
                     <hr className="border border-[#FACABC] mx-5" />
