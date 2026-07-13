@@ -867,6 +867,7 @@
 
 "common": {
     "person": "Person",
+    "persons": "People",
     "date_of_birth": "Date of Birth",
     "full_name": "Full Name",
     "identification": "ID / Passport Number",
@@ -956,20 +957,24 @@
                 "placeholder_arrival": "Select destination location"
             },
             "step2": {
-                "title": "Trip Duration",
+                "title": "When do you want to travel?",
                 "placeholder_start_date": "Trip Start Date",
                 "placeholder_end_date": "Trip End Date"
             },
             "step3": {
                 "title": "Who do you want the insurance to cover?",
-                "placeholder_preference": "Selection"
+                "placeholder_preference": "Selection",
+                "numberPersons": "Number of persons"
             },
             "step4": {
-                "title": "What is the main traveler's date of birth?",
-                "placeholder_date": "Date"
+                "title": "Fill in the information below",
+                "person": "Person",
+                "id_passport": "ID / Passport",
+                "birth_date": "Date of Birth",
+                "fullName": "Full Name"
             },
             "step5": {
-                "title": "Travel Insurance Plans"
+                "title": "Choose your plan"
             }
         },
         "buttons": {
@@ -1180,6 +1185,7 @@
         "common.person": "Person"
   ,"common": {
     "person": "Person",
+    "persons": "People",
     "date_of_birth": "Date of Birth",
     "full_name": "Full Name",
     "identification": "ID / Passport Number",
@@ -1202,7 +1208,7 @@
         "insurance_period": "Insurance Period",
         "travelling_from": "Where are you travelling from?",
         "travelling_to": "Where are you travelling to?",
-        "traveler": "1 Traveler",
+        "traveler": "Travelers",
         "traveler_age": "22 years old",
         "total": "Total",
         "proceed_button": "Continue",

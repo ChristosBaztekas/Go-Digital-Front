@@ -188,7 +188,7 @@ export const Economy = ({
               <span className="flex p-2 justify-center items-center bg-black w-8 h-8 rounded-full transition-transform -rotate-90 group-hover:-rotate-[135deg]">
                 <iconsUtil.QuoteArrowIcon />
               </span>
-              {t("common.previous")}
+              {t("travel_quote_page.buttons.previous")}
             </button>
 
             <button
@@ -198,7 +198,7 @@ export const Economy = ({
               }}
               className="group flex items-center justify-center gap-2 bg-white w-2/5 h-12 text-sm vsm:text-base font-medium border rounded-[27.5px] shadow-md transition-all text-black"
             >
-              {t("common.next")}
+              {t("travel_quote_page.buttons.next")}
               <span className="flex p-2 justify-center items-center bg-secondaryColor w-8 h-8 rounded-full transition-transform group-hover:rotate-45">
                 <iconsUtil.QuoteArrowIcon />
               </span>

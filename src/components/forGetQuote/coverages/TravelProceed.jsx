@@ -206,7 +206,7 @@ export const TravelProceed = () => {
           style={{ boxShadow: "0px -2px 4px 0px #FFEFEA" }}
         >
           <h1 className="hidden sm:block max-w-[683px] text-2xl sm:text-3xl text-left font-medium mb-4">
-            {t("travel_proceed.header.desktop")}
+            {selectedQuote.name || t("travel_proceed.cover")}
           </h1>
           <h1 className="sm:hidden max-w-[683px] text-2xl lg:text-3xl text-left font-medium mb-4">
             {t("travel_proceed.header.mobile")}
@@ -216,7 +216,7 @@ export const TravelProceed = () => {
 
           <div className="space-y-6">
 
-            <article className="flex gap-4 vsm:gap-7 items-center">
+            {/* <article className="flex gap-4 vsm:gap-7 items-center">
               <iconsUtil.CompanyIcon />
               <div>
                 <h1 className="sm:text-lg font-semibold text-secondaryColor">
@@ -224,7 +224,7 @@ export const TravelProceed = () => {
                 </h1>
                 <h2 className="text-sm sm:text-base">HDI Global Specialty SE</h2>
               </div>
-            </article>
+            </article> */}
 
             <article className="flex gap-4 vsm:gap-7 items-center">
               <iconsUtil.PeriodIcon />
@@ -269,8 +269,10 @@ export const TravelProceed = () => {
                   {t("travel_proceed.traveler")}
                 </h1>
                 <h2 className="text-sm sm:text-base">
-                  {userDetails.step3.insuredType} ({userDetails.step4.persons.length}{" "}
-                  {userDetails.step4.persons.length === 1 ? t("common.person") : t("common.persons")})
+                  {userDetails.step3.insuredType}
+                  {userDetails.step4.persons.length !== 1 && (
+                    <> ({userDetails.step4.persons.length} {t("travel_proceed.common.persons")})</>
+                  )}
                 </h2>
               </div>
             </article>

@@ -248,9 +248,6 @@ export const TravelQuote = () => {
         if (!p.identification.trim()) {
           newErrors[`person_${i}_id`] = "Please enter identification";
           isValid = false;
-        } else if (!/^[A-Za-z0-9]{3,20}$/.test(p.identification.trim())) {
-          newErrors[`person_${i}_id`] = "Identification must be 3-20 alphanumeric characters";
-          isValid = false;
         }
       });
     }
@@ -320,8 +317,8 @@ export const TravelQuote = () => {
     if (currentStep === 2) {
       const type = userData.step3.insuredType;
       let count = 1;
-      if (type.includes("Couple")) count = 2;
-      else if (["Family", "Group"].includes(type)) {
+      if (["Couple", "Ζευγάρι"].includes(type)) count = 2;
+      else if (["Family", "Group", "Οικογένεια", "Ομάδα (Group)"].includes(type)) {
         count = Math.max(1, Math.min(20, parseInt(userData.step3.personCount) || 1));
       }
       const persons = Array(count)
@@ -425,7 +422,7 @@ export const TravelQuote = () => {
             <Fragment>
               <div className="w-full max-w-80 vsm:max-w-96 sm:w-[400px]">
                 <SearchableSelect
-                  placeholder="From which country?"
+                  placeholder={t("travel_quote_page.steps.step1.title1")}
                   options={apiData.countries.map((c) => c.name)}
                   value={userData.step1.fromCountry}
                   onChange={handleFromCountrySelect}
@@ -435,7 +432,7 @@ export const TravelQuote = () => {
 
               <div className="w-full max-w-80 vsm:max-w-96 sm:w-[400px]">
                 <MultiCountrySelect
-                  placeholder="To which country?"
+                  placeholder={t("travel_quote_page.steps.step1.title2")}
                   options={apiData.countries.map((c) => c.name)}
                   selectedCountries={userData.step1.toCountry}
                   onAddCountry={handleToCountryAdd}
@@ -450,7 +447,7 @@ export const TravelQuote = () => {
             <div className="flex flex-col justify-center items-center gap-10">
               <Icons.QuoteDurationIcon />
               <h1 className="max-w-[683px] text-2xl sm:text-4xl text-center font-semibold">
-                When do you want to travel?
+                {t("travel_quote_page.steps.step2.title")}
               </h1>
               <div className="flex flex-wrap justify-center gap-5">
                 <div className="w-full max-w-80 vsm:max-w-96 sm:w-[400px]">
@@ -490,24 +487,24 @@ export const TravelQuote = () => {
           {currentStep === 2 && (
             <div className="flex flex-col justify-center items-center gap-10">
               <h1 className="max-w-[683px] text-2xl sm:text-4xl text-center font-semibold">
-                Who is traveling?
+                {t("travel_quote_page.steps.step3.title")}
               </h1>
               <div className="w-full max-w-80 vsm:max-w-96 sm:w-[400px]">
                 <TravelSelect
-                  placeholder="Select type"
+                  placeholder={t("travel_quote_page.steps.step3.placeholder_preference")}
                   value={userData.step3.insuredType}
                   onChange={(e) => handleInsuredTypeSelection(e.target.value)}
                   options={apiData.types.map((t) => t.name)}
                 />
                 {errors.insuredType && <p className="text-red-600 text-sm mt-1 text-center">{errors.insuredType}</p>}
               </div>
-              {["Family", "Group"].includes(userData.step3.insuredType) && (
+              {["Family", "Group", "Οικογένεια", "Ομάδα (Group)"].includes(userData.step3.insuredType) && (
                 <div className="flex flex-col items-center gap-3">
-                  <h2 className="text-lg font-semibold">Number of persons</h2>
+                  <h2 className="text-lg font-semibold">{t("travel_quote_page.steps.step3.numberPersons")}</h2>
                   <div className="w-full max-w-80 vsm:max-w-96 sm:w-[200px]">
                     <TravelInput
                       type="number"
-                      placeholder="1"
+                      placeholder=""
                       value={userData.step3.personCount}
                       onChange={(e) =>
                         setUserData((prev) => ({
@@ -529,7 +526,7 @@ export const TravelQuote = () => {
             <div className="flex flex-col justify-center items-center gap-10 w-full">
               <Icons.QuoteBirthIcon />
               <h1 className="max-w-[683px] text-2xl sm:text-4xl text-center font-semibold">
-                Enter traveler details
+                {t("travel_quote_page.steps.step4.title")}
               </h1>
               <div
                 className={`grid gap-6 w-full max-w-2xl ${
@@ -537,18 +534,18 @@ export const TravelQuote = () => {
                 }`}
               >
                 {userData.step4.persons.map((person, i) => {
-                  const showLabel = !["Individual"].includes(userData.step3.insuredType);
+                  const showLabel = !["Individual", "Ένα Άτομο"].includes(userData.step3.insuredType);
                   return (
                     <div key={i} className="flex flex-col gap-4">
                       {showLabel && (
                         <h3 className="text-lg font-semibold text-center">
-                          Person {i + 1}
+                          {t("travel_quote_page.steps.step4.person")} {i + 1}
                         </h3>
                       )}
                       <div>
                         <TravelInput
                           type="date"
-                          placeholder="Date of Birth"
+                          placeholder={t("travel_quote_page.steps.step4.birth_date")}
                           value={person.dateBirth}
                           onChange={(e) => {
                             const newPersons = [...userData.step4.persons];
@@ -567,7 +564,7 @@ export const TravelQuote = () => {
                       <div>
                         <TravelInput
                           type="text"
-                          placeholder="Full Name"
+                          placeholder={t("travel_quote_page.steps.step4.fullName")}
                           value={person.name}
                           onChange={(e) => {
                             const newPersons = [...userData.step4.persons];
@@ -583,7 +580,7 @@ export const TravelQuote = () => {
                       <div>
                         <TravelInput
                           type="text"
-                          placeholder="ID / Passport"
+                          placeholder={t("travel_quote_page.steps.step4.id_passport")}
                           value={person.identification}
                           onChange={(e) => {
                             const newPersons = [...userData.step4.persons];
@@ -606,7 +603,7 @@ export const TravelQuote = () => {
           {currentStep === 4 && (
             <section className="w-full max-w-3xl">
               <h1 className="max-w-[683px] text-2xl sm:text-4xl text-center font-semibold mb-6">
-                Choose your plan
+                {t("travel_quote_page.steps.step5.title")}
               </h1>
               <div className="bg-[#FDE5DE] rounded-[15px] p-4">
                 {quote.length === 0 ? (
