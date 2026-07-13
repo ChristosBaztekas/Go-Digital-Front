@@ -230,7 +230,7 @@ export const ForeignersProceed = () => {
 
                     <div className="flex flex-col gap-6 items-start justify-center py-5 px-4 vsm:px-8 sm:px-14">
                         {/* Insurance Company */}
-                        <article className="flex gap-4 vsm:gap-7 items-center">
+                        {/* <article className="flex gap-4 vsm:gap-7 items-center">
                             <iconsUtil.CompanyIcon />
                             <span>
                                 <h1 className="sm:text-lg font-semibold text-secondaryColor">
@@ -239,7 +239,7 @@ export const ForeignersProceed = () => {
                                 <h2 className="text-sm sm:text-base">HDI Global Specialty SE</h2>
                             </span>
                         </article>
-                        <hr className="border border-[#FACABC] w-full" />
+                        <hr className="border border-[#FACABC] w-full" /> */}
 
                         {/* Insurance Period */}
                         <article className="flex gap-4 vsm:gap-7 items-center">
@@ -308,7 +308,7 @@ export const ForeignersProceed = () => {
                                 <h1 className="sm:text-lg font-semibold text-secondaryColor">
                                     {t("foreigners_proceed.gender")}
                                 </h1>
-                                <h2 className="text-sm sm:text-base">{userDetails.step3.gender}</h2>
+                                <h2 className="text-sm sm:text-base">{userDetails.step3.gender_name}</h2>
                             </span>
                         </article>
                     </div>

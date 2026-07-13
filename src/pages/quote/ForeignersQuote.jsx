@@ -73,7 +73,7 @@ export const ForeignersQuote = () => {
         setApiData({
           questions: data.questions || [],
           countries: (data.countries || []).map(c => ({ id: Number(c.id), name: c.name })),
-          genders: (data.genders || []).map(g => ({ id: Number(g.id), name: g.name.toLowerCase() })),
+          genders: (data.genders || []).map(g => ({ id: g.id, name: g.name.toLowerCase() })),
         });
       } catch (err) {
         console.error(err);
@@ -132,6 +132,10 @@ export const ForeignersQuote = () => {
     setIsInvalid(false);
     setUserData(prev => ({ ...prev, [step]: { ...prev[step], [field]: value } }));
   };
+  const handleSelectGender = (step, field1, value1, field2, value2) => {
+    handleInputChange(step, field1, value1);
+    handleInputChange(step, field2, value2);
+  };
 
   const handleNationalitySelect = name => {
     const country = apiData.countries.find(c => c.name === name);
@@ -161,7 +165,7 @@ export const ForeignersQuote = () => {
     if (step === 1) {
       if (data.nationalityId === null) { newErrors.nternationality = t("validation.select_nationality"); isValid = false; }
       if (!data.identification.trim()) { newErrors.identification = t("validation.enter_identification"); isValid = false; }
-      else if (!/^[A-Za-z0-9]{3,20}$/.test(data.identification.trim())) { newErrors.identification = t("validation.id_invalid_format"); isValid = false; }
+      // else if (!/^[A-Za-z0-9]{3,20}$/.test(data.identification.trim())) { newErrors.identification = t("validation.id_invalid_format"); isValid = false; }
     }
     if (step === 2) {
       const today = new Date(); today.setHours(0, 0, 0, 0);
@@ -310,7 +314,12 @@ export const ForeignersQuote = () => {
               <h1 className="max-w-[683px] text-2xl sm:text-4xl text-center font-semibold">{t("foreigners_quote_page.steps.step3.title1")}</h1>
               <TravelInput type="date" value={userData.step3.birthday} onChange={e => handleInputChange("step3", "birthday", e.target.value)} isInvalid={isInvalid && !!errors.birthday} max={getMaxBirthDate()} error={errors.birthday} />
               <h1 className="max-w-[683px] text-2xl sm:text-4xl text-center font-semibold">{t("foreigners_quote_page.steps.step3.title2")}</h1>
-              <TravelSelect placeholder={t("foreigners_quote_page.steps.step3.placeholder_gender")} value={userData.step3.gender} onChange={e => handleInputChange("step3", "gender", e.target.value)} isInvalid={isInvalid && !!errors.gender} options={apiData.genders.map(g => g.name)} error={errors.gender} />
+              <TravelSelect placeholder={t("foreigners_quote_page.steps.step3.placeholder_gender")} value={userData.step3.gender} isInvalid={isInvalid && !!errors.gender} options={apiData.genders} error={errors.gender}
+                onChange={(e) => {
+                  const selected = apiData.genders.find((g) => g.id === e.target.value);
+                  handleSelectGender("step3", "gender", selected.id, "gender_name", selected.name);
+                }}
+              />
             </div>
           )}
 
@@ -365,7 +374,11 @@ const TravelSelect = ({ placeholder, value, onChange, options, isInvalid, error 
       className={`w-full max-w-80 vsm:max-w-96 sm:w-[400px] h-[75px] px-4 border rounded-[10px] font-medium focus:outline-none ${isInvalid ? "border-secondaryColor border-2 animate-pulse" : "border-[#C3C3C3]"} ${value ? "text-black border-black" : "text-[#C3C3C3]"}`}
     >
       <option value="" disabled hidden>{placeholder}</option>
-      {options.map((opt, i) => <option key={i} value={opt}>{opt}</option>)}
+      {options.map((opt) => (
+        <option key={opt.id} value={opt.id}>
+          {opt.name}
+        </option>
+      ))}
     </select>
     {error && <p className="text-red-600 text-sm mt-1 text-center">{error}</p>}
   </div>
